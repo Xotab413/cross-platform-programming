@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<form action="http://localhost:8080/isleap">
+    <label>Year: </label><br>
+    <input type="text" id="year" name="year" th:value="${year}"><br>
+    <td th:text="'Is leap:  ' + ${result}">Is leap:</td>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
